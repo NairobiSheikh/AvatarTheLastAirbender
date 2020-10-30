@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html { 
+  background: url(/img/landingPage1-2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@font-face {
+  font-family: 'brushido';
+  src: url(/fonts/Brushido.ttf);
+}
+@font-face{
+  font-family: 'roman';
+  src: url(/fonts/HerculanumLTStd.otf);
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); }
+}
+#container {
+  margin: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+#chin-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+/* #title {
+  margin: 0;
+  padding: 0;
+} */
+#title-main {
+  font-family: 'brushido';
+  display: block;
+  font-size: 6rem;
+  font-weight: 800;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+#title-sub {
+  font-family: 'roman';
+  display: block;
+  margin-top: -1.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.sub-title {
+  margin: 6rem;
+  font-family: 'roman';
+  font-size: 4rem;
+  border: 1px solid #8a1;
+  font: normal 30px/60px 'roman';
+  color: #451;
+  text-align: center;
+  background: rgba(154, 187, 34, 0.651);
+}
+
+#content-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+a:link, a:visited {
+  border-bottom: 1px solid red;
+	text-decoration: underline;
+	color: red;
+}	
+a:hover, a:active {
+  border-bottom: 3px solid red;
+	text-decoration: none;
+	color: maroon;
+}
+.imgs {
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: gray 0 0 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
