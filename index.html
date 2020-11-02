@@ -2,30 +2,41 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Basic Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- The Creater -->
+  <meta name="author" content="Nairobi Sheikh" />
+  <meta name="description"
+    content="Avatar the last airbender, the game. A basic game where you get to paly the role of whatever avatar you choose. You go through their life experience, fight their enemies and bring peace to the villages." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/img/red.png" type="image/png" sizes="16x16" />
+
+  <!-- CSS Link -->
   <link rel="stylesheet" href="main.css">
+
   <title>Avatar The Last Airbender</title>
 </head>
 
 <body>
   <header class="container">
-    <h2 id="chin-title">降卋神通</h2>
-    <h1 id="title">
-      <span id="title-main">Avatar</span>
-      <span id="title-sub">The Last Airbender</span>
-    </h1>
-    <figure>
-      <!-- <figcaption>Listen to Brave Little Soldier Boy:</figcaption> -->
+    <!-- <figure>
+      <figcaption>Listen to Brave Little Soldier Boy:</figcaption>
       <audio
-          id="player"
+          id="my_audio" loop="loop" autoplay="autoplay"
           controls
           src="/audio/31YuYen.mp3">
               Your browser does not support the
               <code>audio</code> element.
       </audio>
-  </figure>
+    </figure> -->
+    <dive id="playerContent"></dive>
+    <h2 id="chin-title">降卋神通</h2>
+    <h1 id="title">
+      <span id="title-main">Avatar</span>
+      <span id="title-sub">The Last Airbender</span>
+    </h1>
   </header>
   <main class="container">
     <section id="content-img">
@@ -70,7 +81,7 @@
         </a>
       </div>
     </section>
-    <h2 class="sub-title">Choose your avatar</h2>
+    <h2 id="yourAvatar">Choose your avatar</h2>
   </main>
   <script src="main.js"></script>
 </body>
