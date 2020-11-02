@@ -65,16 +65,16 @@ body {
   text-align: center;
   color: #fff; 
 }
+/** Audio **/
 .circle-audio-player {
   cursor: pointer;
   float: right;
 }
-
+/** Header Segment **/
 #chin-title {
   font-size: 3.5rem;
   animation: moveInLeft 1s ease-out;
 }
-
 #title-main {
   font: 800 8rem 'brushido';
   animation: moveInLeft 1s ease-out;
@@ -86,21 +86,14 @@ body {
   font-size: 2.5rem;
   animation: moveInLeft 1s ease-out;
 }
-.sub-title {
-  margin-top: 7rem;
-  margin-bottom: -5rem;
-  font: normal 40px/80px 'roman';
-  text-align: center;
-  animation: moveInRight 1s ease-out;
-}
 
+/** Image Measurements **/
 #content-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   animation: moveInRight 1s, ease-out;
 }
-
 .img-link {
   text-decoration: none;
   color: #fff;
@@ -116,10 +109,10 @@ body {
   object-fit: cover;
   cursor: pointer;
 }
-
-.sub-title {
+/** h2 **/
+#yourAvatar {
   margin-top: 3rem;
-  font: normal 40px/80px 'roman';
+  font: normal 30px/80px 'roman';
   text-align: center;
   animation: moveInRight 1s ease-out;
 }
