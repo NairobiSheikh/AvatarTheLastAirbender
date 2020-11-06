@@ -26,11 +26,8 @@ function popUp() {
   hole.classList.add('up');
   setTimeout(function () {
       hole.classList.remove('up'); 
-      if (!timeUp){
+      if (!timeUp)
         popUp();
-      } else {
-        return document.querySelector('msg1').innerHTML = 'You have brought great shame to the Toph name!';
-      }
     }, time);
 }
 
