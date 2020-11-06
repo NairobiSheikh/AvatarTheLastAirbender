@@ -184,6 +184,13 @@ a:hover {
   top:0;
 }
 
+.countdown {
+  padding-top: 2rem;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .btn {
 	position: absolute;
 	background: #010124;

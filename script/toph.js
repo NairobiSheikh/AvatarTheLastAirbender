@@ -2,14 +2,13 @@ const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const theBoulders = document.querySelectorAll('.the-boulder');
 const btn = document.querySelector('.btn');
-const msg1 = document.querySelector('.msg1');
-const msg2 = document.querySelector('.msg2');
-
+const countdownBoard = document.querySelector('.countdown');
 
 let lastHole;
 let timeUp = false;
+let timeLimit = 20000;
 let score = 0;
-let currentTime = timeUp.textContent;
+let countdown;
 
 function randomHole(holes) {
   const randomHole = Math.floor(Math.random() * holes.length);
@@ -17,7 +16,6 @@ function randomHole(holes) {
   if (hole === lastHole) {
     return randomHole(holes);
   }
-  
   lastHole = hole; 
   return hole;
 }
@@ -37,11 +35,25 @@ function popUp() {
 }
 
 btn.addEventListener('click', function() {
+  countdown = timeLimit/1000;
   scoreBoard.textContent = 0;
+  countdownBoard.textContent = countdown,
   timeUp = false;
   score = 0;
   popUp();
-  setTimeout(() => timeUp = true, 20000)
+  setTimeout(function(){
+    timeUp = true;
+  }, timeLimit);
+
+  let startCountdown = setInterval(function(){
+    countdown -= 1;
+    countdownBoard.textContent = countdown;
+    if (countdown < 0) {
+      countdown = 0;
+      clearInterval(startCountdown);
+      countdownBoard.textContent = 'Times up!! Thank you for participating on our planet! Toph rules!!'
+    }
+  }, 1000);
 });
 
 function bonk(e) {
