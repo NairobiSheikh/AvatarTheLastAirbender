@@ -72,14 +72,14 @@ body {
 }
 
 .toph {
-  background: url('img/toph.jpg');
+  background: url('../img/toph.jpg');
   height: 100vh;
   color: #000;
   /* object-fit: contain; */
 }
 
 .theBoulder {
-  background:url('img/TheBoulder2.jpg');
+  background:url('../img/TheBoulder2.jpg');
   height: 100vh;
   color: #fff;
   /* object-fit: contain; */
@@ -126,7 +126,7 @@ a:hover {
 
 /* Start of main content */
 #content {
-  background: url('img/tophKillerEye.jpg');
+  background: url('../img/tophKillerEye.jpg');
   background-size: cover;
   height: 100vh;
 }
@@ -160,7 +160,7 @@ a:hover {
 
 .hole:after {
   display: block;  
-  background: url('img/sand1.png');
+  background: url('../img/sand1.png');
   background-size: contain;
   content:'';
   width: 100%;
@@ -171,7 +171,7 @@ a:hover {
 }
 
 .the-boulder {
-  background: url('img/theBoulder.png') bottom center no-repeat;
+  background: url('../img/theBoulder.png') bottom center no-repeat;
   background-size: 60%;
   position: absolute;
   top: 100%;
