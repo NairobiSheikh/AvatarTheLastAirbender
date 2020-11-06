@@ -1,0 +1,150 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* :root {
+
+} */
+
+body {
+  height: 100vh;
+  background: url(/img/landingPage.jpg);
+  background-size: cover;
+  background-position: top;
+  object-fit: contain;
+}
+/** The Fonts **/
+@font-face {
+  font-family: 'brushido';
+  src: url(/fonts/Brushido.ttf);
+}
+@font-face{
+  font-family: 'roman';
+  src: url(/fonts/HerculanumLTStd.otf);
+}
+/** Keyframes Animetions **/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); }
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.container {
+  margin: 2.5rem;
+  align-items: center;
+  text-align: center;
+  color: #fff; 
+}
+/** Audio **/
+.circle-audio-player {
+  cursor: pointer;
+  float: right;
+}
+/** Header Segment **/
+#chin-title {
+  font-size: 2.5rem;
+  animation: moveInLeft 1s ease-out;
+}
+#title-main {
+  font: 900 6rem 'brushido';
+  animation: moveInLeft 1s ease-out;
+}
+#title-sub {
+  font-family: 'roman';
+  display: block;
+  margin: -1.5rem;
+  /* font-size: 2rem; */
+  animation: moveInLeft 1s ease-out;
+}
+
+/** Image Measurements **/
+#content-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  animation: moveInRight 1s, ease-out;
+}
+
+.img-link {
+  text-decoration: none;
+  color: #fff;
+}
+.imgs {
+  border-radius: 50%;
+  box-shadow: 0px .5rem 1rem rgba(0,0,0,.75);
+	border: 1px white solid;
+  animation: float 6s ease-in-out infinite;
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+/* .text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'roman';
+}*/
+.show-lay {
+  position: absolute;
+  opacity: 0;
+  transition: all .3s ease;
+}
+.img-container:hover .show-lay {
+  opacity: 1;
+}
+.img-container:hover .imgs {
+  opacity: 0;
+}
+.show-lay {
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(123, 228, 82, 0.603);
+}
+
+.container:hover .img-container {
+  width: 100%;
+  height: 100%;
+}
+/** h2 **/
+#yourAvatar {
+  margin-top: 3rem;
+  font: normal 30px/80px 'roman';
+  text-align: center;
+  animation: moveInRight 1s ease-out;
+}

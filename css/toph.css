@@ -1,0 +1,199 @@
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'roman';
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'roman';
+  src: url(/fonts/HerculanumLTStd.otf);
+}
+/* Start of herder content */
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sides {
+  position: relative;
+  animation: 0.7s customBounce ease 0.4s both;
+
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+}
+
+@keyframes customBounce {
+  0% {
+    grid-gap: 100vw;
+  }
+  12% {
+    grid-gap: 90vw;
+  }
+  24% {
+    grid-gap: 57vw;
+  }
+  36% {
+    grid-gap: 3vw;
+  }
+  54% {
+    grid-gap: 25vw;
+  }
+  74% {
+    grid-gap: 2.5vw;
+  }
+  82% {
+    grid-gap: 6.25vw;
+  }
+  92% {
+    grid-gap: .7vw;
+  }
+  96% {
+    grid-gap: 1.5vw;
+  }
+  100% {
+    grid-gap: 0;
+  }
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 5vw;
+}
+
+.toph {
+  background: url('/img/toph.jpg');
+  height: 100vh;
+  color: #000;
+  /* object-fit: contain; */
+}
+
+.theBoulder {
+  background:url('/img/TheBoulder2.jpg');
+  height: 100vh;
+  color: #fff;
+  /* object-fit: contain; */
+  flex-direction: column-reverse;
+}
+
+.name {
+  margin: 0.2em;
+}
+
+.versus {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  background: #ffffff;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+  color: #123456;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #14a76e #ff652f #ff652f #14a76e;
+  transform: rotate(-45deg);
+}
+.versus span {
+  transform: rotate(35deg);
+}
+a {
+  text-decoration: none;
+  color: rgb(236, 17, 17);
+}
+a:hover {
+  color: #14a76e;
+}
+/* End of header content */
+
+/* Start of main content */
+#content {
+  background: url('/img/tophKillerEye.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.title-main {
+  text-align: center;
+  font-size: 5rem;
+  line-height:1;
+  padding-top: 3rem;
+}
+
+.score {
+  font-size: 150px;
+  margin-bottom: -10rem;
+  text-align: center;
+}
+
+.game {
+  width:600px;
+  height:400px;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;  
+  background: url('/img/sand1.png');
+  background-size: contain;
+  content:'';
+  width: 100%;
+  height:70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+.the-boulder {
+  background: url('/img/theBoulder.png') bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.hole.up .the-boulder {
+  top:0;
+}
+
+.btn {
+	position: absolute;
+	background: #010124;
+	color: #fff;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	margin: 5%;
+	padding: 10px 50px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+/* End of main content */
