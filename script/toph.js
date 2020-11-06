@@ -49,7 +49,6 @@ function bonk(e) {
   score++;
   this.parentNode.classList.remove('up');
   scoreBoard.textContent = score;
-  console.log(this);
 }
 
 theBoulders.forEach(theBoulder => theBoulder.addEventListener('click', bonk));
