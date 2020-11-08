@@ -72,14 +72,20 @@ body {
 }
 
 .toph {
-  background: url('../img/toph.jpg');
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), url('../img/toph.jpg');
   height: 100vh;
   color: #000;
   /* object-fit: contain; */
 }
 
 .theBoulder {
-  background:url('../img/TheBoulder2.jpg');
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), url('../img/TheBoulder2.jpg');
   height: 100vh;
   color: #fff;
   /* object-fit: contain; */
@@ -132,6 +138,7 @@ a:hover {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)), url(../img/tophKillerEye.jpg);
   background-size: cover;
+  background-position: top bottom;
   height: 100vh;
 }
 
@@ -191,7 +198,7 @@ a:hover {
 .countdown {
   padding-top: 2rem;
   width: 100%;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 }
 
