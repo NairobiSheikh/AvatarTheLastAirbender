@@ -6,7 +6,7 @@
 
 body {
   font-family: 'roman';
-  /* color: #fff; */
+  color: #fff;
 }
 
 @font-face {
@@ -126,7 +126,11 @@ a:hover {
 
 /* Start of main content */
 #content {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), url('../img/tophKillerEye.jpg');
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)), url(../img/tophKillerEye.jpg);
   background-size: cover;
   height: 100vh;
 }
